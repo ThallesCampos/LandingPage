@@ -1,0 +1,146 @@
+* {
+    margin: 0; /* Tira a margem da página */
+    padding: 0;/* Tira o espaço interno da página */
+    box-sizing: border-box; /* Não sei o que faz */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Muda a fonte */
+    line-height: 1.6; /* Espaçamento da linha */
+    background-color: #d4cfcd; /* Muda a cor de fundo da página toda */
+}
+
+nav {
+    position: fixed; /* Fixa a posição da navbar */
+    top: 5px; /* Espaçamento na parte de cima */
+    width: 90%; /* Largura */
+    left: 50%; /* Move para a direita */
+    transform: translateX(-50%); /* Move o eixo X para o centro (Usado para não fazer gambiarra e autorizado pelo Gustavo)*/
+    background-color: #5f5f5f83; /* Muda a cor de fundo */
+    border-radius: 20px;
+    padding: 20px 0; /* Muda o tamanho espaço interno da caixa */
+}
+
+/* Muda a lista da navbar */
+nav ul {
+    list-style-type: none; /* Remove o estilo de lista */
+    display: flex; /* Deixar a lista flexível para mexer */
+    justify-content: center; /* Alinha os itens ao centro de forma horizontal */
+}
+
+/* Muda a lista e os itens */
+nav ul li {
+    margin: 0 20px; /* Margin de 0 na parte de cima e de baixo, espaçamento dos lados */
+}
+
+/* Muda a lista, os itens e o link */
+nav ul li a {
+    color: white; /* Muda a cor dos demais */
+    text-decoration: none; /* Tira os detalhes do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    padding: 10px; /* Espaçamento interno */
+    transition: color 0.3s; /* Coloc */
+}
+
+/* Efeito ao passar o mouse por cima */
+nav ul li a:hover {
+    color: #ff0008;
+}
+
+/* Modifica a parte home da página */
+section:not(#home) {
+    padding: 100px 20px; /* espaçamento de 100 cima e baixo, 20 dos lados */
+    text-align: center; /* alinha os textos ao centro */
+    display: flex; /* Deixa o display flexível */
+    justify-content: center; /* Alinha o conteudo de forma horizontal */
+    align-items: center; /* Alinha o conteudo de forma vertical */
+    height: 100vh; /* Ajusta a altura de acordo com a tela */
+}
+
+/* Configurações do home */
+#home {
+    /* background-color: #4a90e2;  */
+    background-image: url(src/278449.png); /* Coloca uma imagem com o url */
+    background-size: cover; /* Cobre o fundo com o tamanho da imagem */
+    background-repeat: no-repeat; /* Não deixa o fundo repetir */
+    color: #d4cfcd; /* Cor do que estiver por cima (fonte nesse caso) */
+    /* text-shadow: 2px 2px 20px #0000007a; */
+    border-radius: 0 0 30px 30px;
+    height: 100vh; /* altura relativa com a altura da tela */
+    text-align: center; /* Alinha o texto ao centro */
+    display: flex; /* Deixa os itens mais flexíveis */
+    flex-direction: column; /* Deixa os itens em forma de coluna (um por baixo de outro) */
+    justify-content: center; /* Alinha os itens de forma horizontal */
+    align-items: center; /* Alinha os itens de forma vertical */
+    font-size: 1.5em; /* Tamanho da fonte de acordo com o elemento pai */
+}
+
+.content {
+    display: flex; /* Deixa os itens mais flexíveis para mover */
+    flex-direction: row; /* Alinha os itens em forma de linha um ao lado do outro */
+    align-items: center; /* Alinha os itens de forma vertical */
+    justify-content: center; /* Alinha os itens de forma horizontal */
+}
+
+/* Modificar as imagens de dentro do content */
+.content img {
+    width: 400px; /* Largura */
+    height: 300px; /* Altura */
+    object-fit: cover; /* Ajusta o objeto para cobrir */
+    margin-right: 20px; /* Margin a direita */
+    border-radius: 8px; /* Borda arredondada */
+}
+
+/* Modifica o texto e o content*/
+.content .text {
+    max-width: 600px; /* Largura maxima para eles */
+    text-align: left; /* Alinha o texto a esquerda */
+}
+
+/* Modifica o content, texto e h2 */
+.content .text h2 {
+    font-size: 2.2em; /* Tamanho da fonte de acordo com o elemento pai */
+    margin-bottom: 20px; /* Modifica abaixo */
+    color: #0c0b0c;
+}
+
+/* Modifica o parágrafo */
+.content .text p {
+    font-size: 1.4em; /* Tamanho da fonte de acordo com o elemento pai */
+    color: #252525; /* Cor da letra */
+}
+
+#services {
+    background-color: #d4cfcd; /* Muda a cor de fundo */
+}
+
+#about {
+    background-color: #bd2126; /* Muda a cor de fundo */
+    border-radius: 20px;
+}
+
+#about h2, #about p {
+    color: #fff;
+}
+
+#contact {
+    background-color: #d4cfcd; /* Muda a cor de fundo */
+}
+
+.cta-button {
+    margin-top: 100px; /* Margem de cima do botão*/
+    background-color: #bd2126; /* Cor de fundo do botão */
+    color: #0c0b0c; /* Cor da fonte */
+    padding: 15px 30px; /* Espaçamento interno do botão */
+    font-size: 18px; /* Tamanho da fonte */
+    border: none; /* Tira os detalhes do botão */
+    border-radius: 15px; /* Deixa as bordas arredondadas */
+    cursor: pointer; /* Muda o estilo do cursor */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24); /* Coloca uma sombra na borda */
+    transition: background-color 1s ease, transform 1s ease; /* Era para adicionar uma animação, mas não foi */
+}
+
+.cta-button:hover {
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.24); /* Coloca uma sombra na borda */
+    
+}
