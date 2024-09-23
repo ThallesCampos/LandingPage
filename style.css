@@ -72,8 +72,9 @@ section:not(#home) {
     flex-direction: column; /* Deixa os itens em forma de coluna (um por baixo de outro) */
     justify-content: center; /* Alinha os itens de forma horizontal */
     align-items: center; /* Alinha os itens de forma vertical */
-    font-size: 1.5em; /* Tamanho da fonte de acordo com o elemento pai */
+    font-size: 1.7em; /* Tamanho da fonte de acordo com o elemento pai */
 }
+
 
 .content {
     display: flex; /* Deixa os itens mais flexíveis para mover */
@@ -110,16 +111,16 @@ section:not(#home) {
     color: #252525; /* Cor da letra */
 }
 
-#services {
+#conforto {
     background-color: #d4cfcd; /* Muda a cor de fundo */
 }
 
-#about {
+#evolucao {
     background-color: #bd2126; /* Muda a cor de fundo */
     border-radius: 20px;
 }
 
-#about h2, #about p {
+#evolucao h2, #evolucao p {
     color: #fff;
 }
 
@@ -142,5 +143,20 @@ section:not(#home) {
 
 .cta-button:hover {
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.24); /* Coloca uma sombra na borda */
-    
+}
+
+.cta-button a {
+    text-decoration: none;
+    color: #d4cfcd;
+}
+
+.cta-button a:active {
+    color: #252525;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #0c0b0c;
+    color: #d4cfcd;
+    text-align: center;
 }
