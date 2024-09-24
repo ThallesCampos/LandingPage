@@ -124,6 +124,20 @@ section:not(#home) {
     color: #fff;
 }
 
+#playlist {
+    background-color: #bd2126;
+    border-radius: 20px 20px 0 0;
+}
+
+#playlist h2, #playlist p, a {
+    color: #fff;
+}
+
+#playlist a:active {
+    color: #252525;
+}
+
+
 #contact {
     background-color: #d4cfcd; /* Muda a cor de fundo */
 }
